@@ -1,11 +1,15 @@
-const button = document.querySelector("button")!;
-const input1 = document.getElementById("num1")! as HTMLInputElement;
-const input2 = document.getElementById("num2")! as HTMLInputElement;
+// Задайте правильні ts типи для класичних js;
 
-function add(num1: number, num2: number) {
-  return num1 + num2;
-}
+let age: number;
+let nameS: string;
+let toggle: boolean;
+let empty: null; 
+let notInitialize: undefined; 
 
-button.addEventListener("click", function() {
-  console.log(add(+input1.value, +input2.value));
-});
+let callback = (a: number) => { return 100 + a };
+
+// Задайте тип для змінної, в яку можна зберегти будь-яке значення.
+
+let anything: any = -20;
+anything = 'Text';
+anything = {};
