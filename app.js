@@ -1,9 +1,11 @@
-var button = document.querySelector("button");
-var input1 = document.getElementById("num1");
-var input2 = document.getElementById("num2");
-function add(num1, num2) {
-    return num1 + num2;
-}
-button.addEventListener("click", function () {
-    console.log(add(+input1.value, +input2.value));
-});
+// Задайте правильні ts типи для класичних js;
+var age;
+var nameS;
+var toggle;
+var empty;
+var notInitialize;
+var callback = function (a) { return 100 + a; };
+// Задайте тип для змінної, в яку можна зберегти будь-яке значення.
+var anything = -20;
+anything = 'Text';
+anything = {};
